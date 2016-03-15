@@ -26,7 +26,19 @@
 		3A91589B1B12303400A8FA96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A91589A1B12303400A8FA96 /* UIKit.framework */; };
 		3A91589E1B12304B00A8FA96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A91589D1B12304B00A8FA96 /* Foundation.framework */; };
 		3A97DBEE1B12484600276051 /* GoogleAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A97DBED1B12484600276051 /* GoogleAnalytics.m */; };
+		AEAFAB931C9812EF002C4CAF /* GoogleAnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFAB921C9812EF002C4CAF /* GoogleAnalyticsTests.swift */; };
+		AEAFAB951C9812EF002C4CAF /* GoogleAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A91583B1B1220A100A8FA96 /* GoogleAnalytics.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEAFAB961C9812EF002C4CAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A9158321B1220A100A8FA96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A91583A1B1220A100A8FA96;
+			remoteInfo = "Google Analytics";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3A91583B1B1220A100A8FA96 /* GoogleAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +79,9 @@
 		3A91589D1B12304B00A8FA96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3A97DBEC1B1246A000276051 /* GoogleAnalytics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleAnalytics-Info.plist"; sourceTree = "<group>"; };
 		3A97DBED1B12484600276051 /* GoogleAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleAnalytics.m; sourceTree = "<group>"; };
+		AEAFAB901C9812EF002C4CAF /* GoogleAnalyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleAnalyticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEAFAB921C9812EF002C4CAF /* GoogleAnalyticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAnalyticsTests.swift; sourceTree = "<group>"; };
+		AEAFAB941C9812EF002C4CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +99,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AEAFAB8D1C9812EF002C4CAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEAFAB951C9812EF002C4CAF /* GoogleAnalytics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,6 +115,7 @@
 			children = (
 				3A91583D1B1220A100A8FA96 /* Google Analytics */,
 				3A9158571B12217400A8FA96 /* Configuration */,
+				AEAFAB911C9812EF002C4CAF /* GoogleAnalyticsTests */,
 				3A91589C1B12304000A8FA96 /* Frameworks */,
 				3A91583C1B1220A100A8FA96 /* Products */,
 			);
@@ -101,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				3A91583B1B1220A100A8FA96 /* GoogleAnalytics.framework */,
+				AEAFAB901C9812EF002C4CAF /* GoogleAnalyticsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -238,6 +263,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AEAFAB911C9812EF002C4CAF /* GoogleAnalyticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEAFAB921C9812EF002C4CAF /* GoogleAnalyticsTests.swift */,
+				AEAFAB941C9812EF002C4CAF /* Info.plist */,
+			);
+			path = GoogleAnalyticsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -280,17 +314,39 @@
 			productReference = 3A91583B1B1220A100A8FA96 /* GoogleAnalytics.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		AEAFAB8F1C9812EF002C4CAF /* GoogleAnalyticsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEAFAB9A1C9812EF002C4CAF /* Build configuration list for PBXNativeTarget "GoogleAnalyticsTests" */;
+			buildPhases = (
+				AEAFAB8C1C9812EF002C4CAF /* Sources */,
+				AEAFAB8D1C9812EF002C4CAF /* Frameworks */,
+				AEAFAB8E1C9812EF002C4CAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEAFAB971C9812EF002C4CAF /* PBXTargetDependency */,
+			);
+			name = GoogleAnalyticsTests;
+			productName = GoogleAnalyticsTests;
+			productReference = AEAFAB901C9812EF002C4CAF /* GoogleAnalyticsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3A9158321B1220A100A8FA96 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Adrian Kashivskyy";
 				TargetAttributes = {
 					3A91583A1B1220A100A8FA96 = {
 						CreatedOnToolsVersion = 6.3.2;
+					};
+					AEAFAB8F1C9812EF002C4CAF = {
+						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
@@ -307,12 +363,20 @@
 			projectRoot = "";
 			targets = (
 				3A91583A1B1220A100A8FA96 /* Google Analytics */,
+				AEAFAB8F1C9812EF002C4CAF /* GoogleAnalyticsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3A9158391B1220A100A8FA96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEAFAB8E1C9812EF002C4CAF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -330,7 +394,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AEAFAB8C1C9812EF002C4CAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEAFAB931C9812EF002C4CAF /* GoogleAnalyticsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEAFAB971C9812EF002C4CAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A91583A1B1220A100A8FA96 /* Google Analytics */;
+			targetProxy = AEAFAB961C9812EF002C4CAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3A91584F1B1220A100A8FA96 /* Debug */ = {
@@ -389,6 +469,93 @@
 			};
 			name = Release;
 		};
+		AEAFAB981C9812EF002C4CAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GoogleAnalyticsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.akashivskyy.lib.googleanalytics.GoogleAnalyticsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AEAFAB991C9812EF002C4CAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GoogleAnalyticsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = me.akashivskyy.lib.googleanalytics.GoogleAnalyticsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,6 +576,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		AEAFAB9A1C9812EF002C4CAF /* Build configuration list for PBXNativeTarget "GoogleAnalyticsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEAFAB981C9812EF002C4CAF /* Debug */,
+				AEAFAB991C9812EF002C4CAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
